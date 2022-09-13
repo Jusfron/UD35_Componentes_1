@@ -1,0 +1,30 @@
+<div class="container-fluid p-4">
+    <h1 class="m-2">Alta cliente</h1>
+    <div class="row m-2">
+        <label class="col-4">Nombre:</label>
+        <input class="col-8" #nombre>
+    </div>
+    <div class="row m-2">
+        <label class="col-4">CIF:</label>
+        <input class="col-8" #cif>
+    </div>
+    <div class="row m-2">
+        <label class="col-4">Dirección:</label>
+        <input class="col-8" #direccion>
+    </div>
+    <div class="row m-2">
+        <label class="col-4">Grupo:</label>
+        <div class="col-8">
+            <select name="grupo" #grupo>
+            <option value="grupo1" selected>1</option>
+            <option value="grupo2">2</option>
+            <option value="grupo3">3</option>
+        </select>
+        </div>
+        
+    </div>
+    <div class="row m-2">
+        <div class="col"><button class="btn btn-primary" (click)="enviarCliente(nombre.value, cif.value, direccion.value, grupo.value)" >Guardar</button></div>
+        
+    </div>
+</div>>
